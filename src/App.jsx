@@ -5,6 +5,7 @@ import './App.css'
 import Navbar from './pages/Navbar'
 // Hero
 import Hero from './pages/Hero'
+import Servicios from './pages/Servicios'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <main className="container">
           <Navbar />
           <Hero/>
+          <Servicios />
         </main>
       </div>
     </>
