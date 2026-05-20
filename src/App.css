@@ -16,7 +16,7 @@
   /* === TEXT === */
   --color-text-primary: #ffffff;
   --color-text-secondary: #000000;
-  --color-text-muted: rgba(255, 255, 255, 0.35);
+  --color-text-muted: rgba(255, 255, 255, 0.15);
   /* === TYPOGRAPHY === */
   --font-primary: "Inter", sans-serif;
 
