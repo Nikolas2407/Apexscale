@@ -1,0 +1,136 @@
+.us-section {
+    position: relative;
+    min-height: 80vh;
+    padding: 130px 8%;
+    color: #fff;
+    overflow: hidden;
+}
+
+.us-content {
+    width: 100%;
+    max-width: 1480px;
+    margin: 0 auto;
+}
+
+.us-copy {
+    max-width: 1050px;
+    margin: 0 auto 56px;
+    text-align: center;
+}
+
+.us-title {
+    font-size: clamp(54px, 7vw, 112px);
+    line-height: 0.9;
+    letter-spacing: -0.075em;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.96);
+}
+
+.us-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+.us-card {
+    min-height: 240px;
+    padding: 22px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.055);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(22px);
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.22);
+    opacity: 0;
+    transform: translateY(44px);
+    animation: revealCard linear forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 38%;
+    transition: transform 0.35s ease, border-color 0.35s ease, background 0.35s ease;
+}
+
+.us-card:nth-child(2) {
+    animation-range: entry 8% cover 42%;
+}
+
+.us-card:nth-child(3) {
+    animation-range: entry 16% cover 46%;
+}
+
+.us-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(103, 232, 249, 0.36);
+}
+
+.us-card.large {
+    min-height: 240px;
+    display: block;
+}
+
+.us-card span {
+    display: block;
+    margin-bottom: 52px;
+    font-size: 14px;
+    color: rgba(103, 232, 249, 0.9);
+}
+
+.us-card h3 {
+    font-size: 23px;
+    line-height: 1.05;
+    letter-spacing: -0.045em;
+    color: #ffffff;
+    transition: color 0.35s ease;
+}
+
+.us-card:hover h3 {
+    color: #67e8f9;
+}
+
+.us-card p {
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.62);
+}
+
+@keyframes revealCard {
+    from {
+        opacity: 0;
+        transform: translateY(44px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 900px) {
+    .us-section {
+        padding: 100px 24px;
+    }
+
+    .us-copy {
+        margin-bottom: 48px;
+    }
+
+    .us-title {
+        font-size: clamp(44px, 13vw, 72px);
+        letter-spacing: -0.065em;
+    }
+
+    .us-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .us-card,
+    .us-card.large {
+        min-height: 220px;
+    }
+
+    .us-card span {
+        margin-bottom: 44px;
+    }
+}

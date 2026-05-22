@@ -5,10 +5,13 @@ import './App.css'
 import Navbar from './pages/Navbar'
 // Hero
 import Hero from './pages/Hero'
+// Servicios
 import Servicios from './pages/Servicios'
 
 import Proceso from './pages/Proceso'
 import Footer from './pages/Footer'
+// Nosotros
+import Nosotros from './pages/Nosotros'
 
 
 function App() {
@@ -19,11 +22,13 @@ function App() {
         <Grainient />
         <main className="container">
           <Navbar />
-          <Hero/>
+          <Hero />
           <Servicios />
-         
+          <Nosotros />
+          {/* <Frase /> */}
           <Proceso />
-          <Footer/>
+          <Footer />
+
         </main>
       </div>
     </>
