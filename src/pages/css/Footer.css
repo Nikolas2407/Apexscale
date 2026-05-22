@@ -1,0 +1,169 @@
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  position: relative;
+  width: 100%;
+  padding: 7rem 8% 2rem;
+  background:
+    radial-gradient(circle at top, rgba(95,149,152,0.12), transparent 40%),
+    #020617;
+
+  overflow: hidden;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+/* EFECTO BLUR */
+
+.footer::before {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: rgba(29, 84, 109, 0.2);
+  filter: blur(120px);
+  top: -120px;
+  left: -100px;
+  border-radius: 50%;
+}
+
+/* CONTAINER */
+
+.footer-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1300px;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+/* CTA */
+
+.footer-cta {
+  text-align: center;
+}
+
+.footer-cta h2 {
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  letter-spacing: -2px;
+
+  background: linear-gradient(
+    90deg,
+    #ffffff,
+    var(--color-details)
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-cta p {
+  max-width: 700px;
+  margin: auto;
+
+  color: var(--color-terciary);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* BUTTON */
+
+.footer-button {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+
+  border: none;
+  border-radius: var(--radius-full);
+
+  background: linear-gradient(
+    135deg,
+    var(--color-botons),
+    var(--color-details)
+  );
+
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition: all 0.4s ease;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,0.2),
+    transparent
+  );
+
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.footer-button:hover::before {
+  opacity: 1;
+}
+
+.footer-button:hover {
+  transform: translateY(-4px) scale(1.03);
+
+  box-shadow:
+    0 10px 30px rgba(95,149,152,0.3);
+}
+
+/* BOTTOM */
+
+.footer-bottom {
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255,255,255,0.08);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.footer-copy {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.footer-copy strong {
+  color: white;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  .footer {
+    padding: 5rem 5% 2rem;
+  }
+
+  .footer-cta h2 {
+    line-height: 1.2;
+  }
+
+  .footer-cta p {
+    font-size: 0.95rem;
+  }
+
+  .footer-button {
+    width: 100%;
+  }
+}

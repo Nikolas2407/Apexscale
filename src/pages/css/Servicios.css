@@ -4,7 +4,7 @@
 
 .servicios-section {
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
   padding: 2rem 8%;
   position: relative;
   overflow: hidden;
@@ -17,18 +17,15 @@
 
 .servicios-header h2 {
   font-size: clamp(2.5rem, 5vw, 5rem);
-  font-weight: 800;
+  font-weight: 400;
   letter-spacing: -2px;
   margin-bottom: 1rem;
-  background: linear-gradient(
-    90deg,
-    #ffffff,
-    var(--color-details),
-    #ffffff
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 600;
+
+  color: #ffffff;
+
+  -webkit-text-fill-color: initial;
+  -webkit-background-clip: initial;
+  background: none;
 }
 
 .servicios-header p {
