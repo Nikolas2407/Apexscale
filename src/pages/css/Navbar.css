@@ -13,6 +13,14 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     z-index: 100;
     font-family: 'Inter', sans-serif;
+    transition: background-color 0.35s ease, backdrop-filter 0.35s ease, box-shadow 0.35s ease, padding 0.35s ease;
+}
+
+.navbar-scrolled {
+    background: rgba(0, 0, 0, 0.82);
+    backdrop-filter: blur(18px);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+    padding: 28px 10%;
 }
 
 .navbar-left {

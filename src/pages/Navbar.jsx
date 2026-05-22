@@ -1,6 +1,6 @@
 import './css/Navbar.css'
 import logo from '../assets/Logo.png'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Title from '../components/titles/Title';
 import Button from '../components/buttons/Button';
 
@@ -14,9 +14,21 @@ function Navbar() {
   ];
 
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 40);
+    };
+
+    handleScroll();
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${isScrolled ? 'navbar-scrolled' : ''}`}>
 
       <div className="navbar-left">
         <img src={logo} alt="" className='logo'/>

@@ -33,11 +33,18 @@
     #ffffff
   );
 
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
   text-shadow:
     0 0 15px rgba(95,149,152,0.12);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+
 }
 
 .servicios-header p {
