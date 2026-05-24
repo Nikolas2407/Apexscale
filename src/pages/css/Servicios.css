@@ -4,8 +4,8 @@
 
 .servicios-section {
   width: 100%;
-  min-height: 100vh;
-  padding: 7rem 8%;
+  min-height: 80vh;
+  padding: 5rem 8%;
   position: relative;
   overflow: hidden;
 }

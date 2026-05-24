@@ -145,14 +145,16 @@
 @media (max-width: 840px) {
     .navbar-items {
         position: absolute;
-        top: 45px;
+        top: 60px;
         right: 0;
         width: 100%;
+        height: calc(100vh - 60px);
         flex-direction: column;
+        justify-content: flex-start;
         align-items: center;
         gap: 20px;
         padding: 20px;
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.8);
         backdrop-filter: blur(10px);
         display: none;
     }
@@ -169,5 +171,8 @@
     .menu-toggle {
         display: flex;
 
+    }
+    .contact-button {
+        display: none;
     }
 }
