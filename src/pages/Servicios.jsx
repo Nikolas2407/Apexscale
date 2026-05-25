@@ -25,18 +25,25 @@ function Servicios() {
     },
     {
       id: 3,
-      img: automatizacion,
+      img: "https://plus.unsplash.com/premium_photo-1677269465314-d5d2247a0b0c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       nombre: "Automatización de procesos",
       description:
         "Transformamos tareas diarias en sistemas autónomos.",
     },
     {
       id: 4,
-      img: software,
+      img: "https://images.unsplash.com/photo-1605379399642-870262d3d051?q=80&w=1506&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       nombre: "Software a Medida",
       description:
         "Sistemas personalizados según las necesidades de tu negocio.",
     },
+        {
+      id: 5,
+      img: "https://plus.unsplash.com/premium_photo-1681487735113-5224f4e33cd2?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      nombre: "Impulsamos tu negocio",
+      description:
+        "Hacemos tu negocio mediante Google Ads.",
+    }
   ];
 
   return (

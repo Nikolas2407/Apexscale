@@ -17,7 +17,7 @@
   border-top: 1px solid rgba(255,255,255,0.06);
 }
 
-/* EFECTO BLUR */
+/* BLUR */
 
 .footer::before {
   content: "";
@@ -61,6 +61,7 @@
   font-size: clamp(2rem, 4vw, 4rem);
 
   font-weight: 800;
+
   line-height: 1.1;
 
   margin-bottom: 1.5rem;
@@ -94,15 +95,57 @@
     0 0 18px rgba(95,149,152,0.18);
 }
 
-/* BUTTON */
+/* SOCIAL BUTTONS */
 
-.footer-button {
-  margin-top: 2rem;
+.footer-socials {
+  margin-top: 2.5rem;
 
-  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
 
-  border: none;
-  border-radius: var(--radius-full);
+  flex-wrap: wrap;
+}
+
+/* BUTTON BASE */
+
+.social-btn {
+  width: 62px;
+  height: 62px;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(255,255,255,0.08);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  color: rgba(255,255,255,0.65);
+
+  text-decoration: none;
+
+  backdrop-filter: blur(10px);
+
+  transition: all 0.4s ease;
+
+  box-shadow:
+    0 0 15px rgba(0,0,0,0.15);
+}
+
+/* HOVER */
+
+.social-btn:hover {
+  transform: translateY(-6px) scale(1.08);
+}
+
+/* INSTAGRAM */
+
+.instagram:hover {
+  color: white;
 
   background: linear-gradient(
     135deg,
@@ -111,58 +154,44 @@
     #F77737
   );
 
-  color: white;
-
-  font-size: 1rem;
-  font-weight: 600;
-
-  cursor: pointer;
-
-  transition: all 0.4s ease;
-
-  position: relative;
-  overflow: hidden;
-
-  display: inline-flex;
-  align-items: center;
-  gap: 0.8rem;
-
-  text-decoration: none;
-
   box-shadow:
-    0 0 20px rgba(253,29,29,0.18);
+    0 0 25px rgba(253,29,29,0.35),
+    0 0 45px rgba(131,58,180,0.25);
 }
 
-.footer-button::before {
-  content: "";
+/* WHATSAPP */
 
-  position: absolute;
-  inset: 0;
+.whatsapp:hover {
+  color: white;
 
   background: linear-gradient(
     135deg,
-    rgba(255,255,255,0.25),
-    transparent
+    #25D366,
+    #1ebe5d
   );
 
-  opacity: 0;
-
-  transition: 0.4s;
+  box-shadow:
+    0 0 25px rgba(37,211,102,0.45),
+    0 0 45px rgba(37,211,102,0.2);
 }
 
-.footer-button:hover::before {
-  opacity: 1;
-}
+/* GMAIL */
 
-.footer-button:hover {
-  transform: translateY(-4px) scale(1.03);
+.gmail:hover {
+  color: white;
+
+  background: linear-gradient(
+    135deg,
+    #EA4335,
+    #C5221F
+  );
 
   box-shadow:
-    0 10px 35px rgba(253,29,29,0.35),
-    0 0 50px rgba(131,58,180,0.25);
+    0 0 25px rgba(234,67,53,0.4),
+    0 0 45px rgba(234,67,53,0.2);
 }
 
-/* BOTTOM */
+/* FOOTER BOTTOM */
 
 .footer-bottom {
   padding-top: 2rem;
@@ -218,9 +247,9 @@
     font-size: 0.95rem;
   }
 
-  .footer-button {
-    width: 100%;
-    justify-content: center;
+  .social-btn {
+    width: 56px;
+    height: 56px;
   }
 
   .footer-copy {

@@ -37,14 +37,6 @@ function App() {
           <Footer />
 
 
-      <a
-        href="https://wa.me/573112807065"
-        className="whatsapp-float"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FaWhatsapp />
-      </a>
 
         </main>
       </div>

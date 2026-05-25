@@ -1,7 +1,12 @@
 import "./css/Footer.css";
 
 import { motion } from "motion/react";
-import { FaInstagram } from "react-icons/fa";
+
+import {
+  FaInstagram,
+  FaWhatsapp,
+  FaEnvelope
+} from "react-icons/fa";
 
 function Footer() {
   return (
@@ -24,22 +29,46 @@ function Footer() {
             funcional y preparada para crecer.
           </p>
 
-          <motion.a
-            href="https://www.instagram.com/apexsscale?igsh=MWJ4OGc1eGtuNTN5dA=="
-            target="_blank"
-            rel="noopener noreferrer"
-            className="footer-button"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
+          {/* SOCIAL BUTTONS */}
 
-            <FaInstagram size={20} />
+          <div className="footer-socials">
 
-            <span>Síguenos en Instagram</span>
+            {/* INSTAGRAM */}
 
-          </motion.a>
+            <a
+              href="https://www.instagram.com/apexsscale?igsh=MWJ4OGc1eGtuNTN5dA=="
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-btn instagram"
+            >
+              <FaInstagram size={22} />
+            </a>
+
+            {/* WHATSAPP */}
+
+            <a
+              href="https://wa.me/573112807065"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-btn whatsapp"
+            >
+              <FaWhatsapp size={22} />
+            </a>
+
+            {/* GMAIL */}
+
+            <a
+              href="mailto: apexsscale.com"
+              className="social-btn gmail"
+            >
+              <FaEnvelope size={20} />
+            </a>
+
+          </div>
 
         </motion.div>
+
+        {/* FOOTER BOTTOM */}
 
         <div className="footer-bottom">
 

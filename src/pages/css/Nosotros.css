@@ -18,8 +18,8 @@
     text-align: center;
 }
 
-.us-title {
-    font-size: clamp(54px, 7vw, 112px);
+.nosotros-title {
+    font-size: clamp(70px, 7vw, 112px);
     line-height: 0.9;
     letter-spacing: -0.075em;
     font-weight: 500;

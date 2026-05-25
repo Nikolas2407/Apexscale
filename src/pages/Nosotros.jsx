@@ -6,7 +6,7 @@ function Nosotros() {
         <section className="us-section" id="nosotros">
             <div className="us-content">
                 <div className="us-copy">
-                    <Title className="us-title">
+                    <Title className="nosotros-title">
                         Más que diseño, construimos bases digitales para crecer.
                     </Title>
                 </div>
