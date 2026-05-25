@@ -69,18 +69,18 @@ body {
 }
 ::-webkit-scrollbar {
   width: 8px;
-  background: #080308;
+  background: #050505;
 }
 ::-webkit-scrollbar-track {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {  
-    background: #ff6b00;
+    background: #5F9598;
     border-radius: 10px;
     transition: .5s;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #ff3b00;
+    background: #1D546D;
 }
 .container{
   max-width: 100%;
