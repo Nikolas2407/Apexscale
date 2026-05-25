@@ -1,6 +1,7 @@
 import "./css/Footer.css";
 
 import { motion } from "motion/react";
+import { FaInstagram } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -23,13 +24,20 @@ function Footer() {
             funcional y preparada para crecer.
           </p>
 
-          <motion.button
+          <motion.a
+            href="https://www.instagram.com/apexsscale?igsh=MWJ4OGc1eGtuNTN5dA=="
+            target="_blank"
+            rel="noopener noreferrer"
             className="footer-button"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Contactar ahora
-          </motion.button>
+
+            <FaInstagram size={20} />
+
+            <span>Síguenos en Instagram</span>
+
+          </motion.a>
 
         </motion.div>
 

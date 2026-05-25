@@ -1,5 +1,5 @@
 import Grainient from './components/background/Grainient'
-
+import { FaWhatsapp } from "react-icons/fa";
 import './App.css'
 // Navbar
 import Navbar from './pages/Navbar'
@@ -35,6 +35,16 @@ function App() {
           <Proyects />
           <Us />
           <Footer />
+
+
+      <a
+        href="https://wa.me/573112807065"
+        className="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaWhatsapp />
+      </a>
 
         </main>
       </div>

@@ -73,7 +73,6 @@
     var(--color-details)
   );
 
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -83,10 +82,16 @@
 
   margin: auto;
 
-  color: var(--color-terciary);
+  color: rgba(255,255,255,0.82);
 
   font-size: 1.05rem;
+  font-weight: 300;
+
   line-height: 1.8;
+
+  text-shadow:
+    0 0 8px rgba(255,255,255,0.08),
+    0 0 18px rgba(95,149,152,0.18);
 }
 
 /* BUTTON */
@@ -101,14 +106,15 @@
 
   background: linear-gradient(
     135deg,
-    var(--color-botons),
-    var(--color-details)
+    #833AB4,
+    #FD1D1D,
+    #F77737
   );
 
   color: white;
 
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 600;
 
   cursor: pointer;
 
@@ -116,6 +122,15 @@
 
   position: relative;
   overflow: hidden;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  text-decoration: none;
+
+  box-shadow:
+    0 0 20px rgba(253,29,29,0.18);
 }
 
 .footer-button::before {
@@ -126,7 +141,7 @@
 
   background: linear-gradient(
     135deg,
-    rgba(255,255,255,0.2),
+    rgba(255,255,255,0.25),
     transparent
   );
 
@@ -143,7 +158,8 @@
   transform: translateY(-4px) scale(1.03);
 
   box-shadow:
-    0 10px 30px rgba(95,149,152,0.3);
+    0 10px 35px rgba(253,29,29,0.35),
+    0 0 50px rgba(131,58,180,0.25);
 }
 
 /* BOTTOM */
@@ -204,6 +220,7 @@
 
   .footer-button {
     width: 100%;
+    justify-content: center;
   }
 
   .footer-copy {

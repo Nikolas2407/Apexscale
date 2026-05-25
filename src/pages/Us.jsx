@@ -3,6 +3,7 @@ import { motion } from "motion/react";
 import Title from "../components/titles/Title";
 // Imagenes
 import nicolas from "../assets/Niko.png";
+import david from "../assets/David.jpeg";
 
 function Us() {
     const teamMembers = [
@@ -15,7 +16,7 @@ function Us() {
         {
             name: "Juan David Gil",
             role: "CTO & Co-founder",
-            image: "https://images.unsplash.com/photo-1778392099969-e1799d7dd4ea?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            image: david,
             bio: "Experto en desarrollo full stack, lidera la creación de productos digitales robustos y escalables con un enfoque en la calidad y la innovación."
         }
     ];
