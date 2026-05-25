@@ -22,7 +22,7 @@ function Us() {
     ];
 
     return (
-        <section className="us-section" id="nosotros">
+        <section className="us-section" id="us">
             <div className="us-content">
                 <motion.div
                     className="us-header"
